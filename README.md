@@ -8,9 +8,9 @@
 
   <img height="28px" alt="License" src="https://img.shields.io/github/license/wen-js/wenjs?style=for-the-badge" style="max-width:100%;">
 
-  <img height="28px" alt="version" src="https://img.shields.io/npm/v/@thewenjs/wenjs?style=for-the-badge" style="max-width:100%;">
+  <img height="28px" alt="version" src="https://img.shields.io/npm/v/@thewen/wenjs?style=for-the-badge" style="max-width:100%;">
 
-  <img height="28px" alt="version" src="https://img.shields.io/npm/dy/@thewenjs/wenjs?style=for-the-badge" style="max-width:100%;">
+  <img height="28px" alt="version" src="https://img.shields.io/npm/dy/@thewen/wenjs?style=for-the-badge" style="max-width:100%;">
 
   <img height="28px" alt="Patreon" src="https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fshields.redsparr0w.com%2F2473%2Fmonday" style="max-width:100%;">
   <img height="28px" alt="Patreon" src="https://img.shields.io/static/v1?label=QQ%E7%BE%A4&message=%E7%9B%B8%E4%BA%B2%E7%9B%B8%E7%88%B1%E4%B8%80%E5%AE%B6%E4%BA%BA&color=ebb92e&style=for-the-badge" style="max-width:100%;">
