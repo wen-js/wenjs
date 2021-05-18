@@ -1,10 +1,10 @@
 
-<div class="logo">
-  <img src="./assets/readme_imgs/logo.png" alt="chinese-poetry">
+<div class="logo" style="display: flex;justify-content: center;align-items: center;">
+  <img src="./assets/readme_imgs/logo.png" alt="chinese-poetry" style="transform: rotate(180deg);">
 </div>
 
 
-<div class="title">Wen.JS</div>
+<div class="title" style="display: flex;justify-content: center;align-items: center;font-size: 50px;font-weight: bold;letter-spacing: 3px;color: #000;">Wen.JS</div>
 
 <div class="shields">
 
@@ -15,7 +15,7 @@
   <img height="28px" alt="version" src="https://img.shields.io/npm/dy/@thewenjs/wenjs?style=for-the-badge" style="max-width:100%;">
 
   <img height="28px" alt="Patreon" src="https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fshields.redsparr0w.com%2F2473%2Fmonday" style="max-width:100%;">
-  <img height="28px" alt="Patreon" src="https://img.shields.io/static/v1?label=QQ群&message=相亲相爱一家人&color=ebb92e&style=for-the-badge" style="max-width:100%;">
+  <img height="28px" alt="Patreon" src="https://img.shields.io/static/v1?label=QQ%E7%BE%A4&message=%E7%9B%B8%E4%BA%B2%E7%9B%B8%E7%88%B1%E4%B8%80%E5%AE%B6%E4%BA%BA&color=ebb92e&style=for-the-badge" style="max-width:100%;">
 </div>
 
 
@@ -52,20 +52,11 @@
 
 <style>
   .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
   }
   .logo img {
-    transform: rotate(180deg);
   }
   .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: #000;
+
   }
 </style>
