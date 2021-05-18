@@ -1,0 +1,20 @@
+{
+  "name": "@thewenjs/wenjs",
+  "version": "1.1.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "npm": "npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wen-js/wenjs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wen-js/wenjs/issues"
+  },
+  "homepage": "https://github.com/wen-js/wenjs#readme"
+}
