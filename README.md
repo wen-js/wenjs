@@ -1,8 +1,7 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
-<div class="logo" style="display: flex;justify-content: center;align-items: center;">
-  <img src="./assets/readme_imgs/logo.png" alt="chinese-poetry" style="transform: rotate(180deg);">
+<link rel="stylesheet" href="./assets/readme_css/index.css">
+<div class="logo">
+  <img src="./assets/readme_imgs/logo.png" alt="chinese-poetry">
 </div>
-
 
 <div class="title" style="display: flex;justify-content: center;align-items: center;font-size: 50px;font-weight: bold;letter-spacing: 3px;color: #000;">Wen.JS</div>
 
