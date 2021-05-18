@@ -1,9 +1,8 @@
-<link rel="stylesheet" href="./assets/readme_css/index.css">
-<div class="logo">
-  <img src="./assets/readme_imgs/logo.png" alt="chinese-poetry">
+<div class="logo" align = "center">
+  <img src="./assets/readme_imgs/logo.png">
 </div>
 
-<div class="title" style="display: flex;justify-content: center;align-items: center;font-size: 50px;font-weight: bold;letter-spacing: 3px;color: #000;">Wen.JS</div>
+<h1 class="title" align = "center">Wen.JS</h1>
 
 <div class="shields">
 
@@ -48,14 +47,3 @@
 - [汉字之美](https://hz.xusenlin.com/)汉字之美是一个方便查询的诗词网站，简洁干净，方便使用。 -->
 
 </details>
-
-<style>
-  .logo {
-
-  }
-  .logo img {
-  }
-  .title {
-
-  }
-</style>
