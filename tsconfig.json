@@ -21,14 +21,14 @@
     "declaration": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
+      "@src": ["src/index.ts"],
+      "@src/*": ["src/*"]
     },
   },
   "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+    "src/*.ts",
+    "src/*.tsx",
+    "./index.ts",
+    "test/**/*.ts"
+  ]
 }
