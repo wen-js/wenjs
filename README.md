@@ -36,15 +36,27 @@
 
 # API
 - [helloWen](#helloWen)
+- [baidu](#baidu)
 ## helloWen
 问宗和你打招呼
-```javascript
-// js
+```typescript
 wenjs.helloWen()
 // 打开控制台看输出
 ```
 
+## baidu
+告诉你任何问题的答案
+```typescript
+wenjs.baidu(keyword: string)
+// 直接打开新窗口
+```
 
+## whois
+告诉你ta是谁
+```typescript
+wenjs.whois(who: string)
+// 返回ta的简介
+```
 # 赞助者
 
 <!-- [上海逆行信息科技](http://www.desmix.com/) -->

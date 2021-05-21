@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "rootDir": "./",
     "outDir": "./lib",
     "target": "es6",
     "lib": [
@@ -21,7 +22,7 @@
     "declaration": true,
     "baseUrl": "./",
     "paths": {
-      "@src/*": ["src/*"]
+      "@/*": ["src/*"],
     }
   },
   "include": [

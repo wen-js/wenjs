@@ -1,4 +1,5 @@
 
+import packageJson from '../../package.json'
 
 const logoStr = `
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -30,6 +31,13 @@ const logoStr = `
 const logoStyle = `
   color: rgb(5, 176, 250);
 `
+
 export default () => {
   console.log(`%c${logoStr}`, logoStyle)
+  console.log(
+    `%c Wen.js %c ${packageJson.version} %c`,
+    'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+    'background:#41b883 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+    'background:transparent'
+  )
 }

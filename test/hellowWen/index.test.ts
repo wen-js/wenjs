@@ -1,4 +1,4 @@
-import helloWen from '@src/helloWen'
+import helloWen from '@/helloWen'
 it('say hello', () => {
   console.log = jest.fn();
   helloWen()

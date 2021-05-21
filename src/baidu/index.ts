@@ -1,6 +1,6 @@
-export default (str = '') => {
+export default (keyword = '') => {
     const a = document.createElement('a')
-    a.href = `https://www.baidu.com/s?wd=${str}`
+    a.href = `https://www.baidu.com/s?wd=${keyword}`
     a.target = '_blank'
     a.click()
 }
