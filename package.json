@@ -1,14 +1,13 @@
 {
   "name": "@thewen/wenjs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "login": "npm login --registry https://registry.npmjs.org",
-    "npm": "npm publish --registry https://registry.npmjs.org --access=public",
-    "build": "yarn rm && npx tsc --build tsconfig.json",
+    "push": "npm publish --registry https://registry.npmjs.org --access=public",
     "test": "jest --config jest.config.ts",
-    "rm": "node -e \"require('./util').removeDist('./dist')\""
+    "build": "webpack && gulp compile"
   },
   "repository": {
     "type": "git",
@@ -26,9 +25,18 @@
     "@babel/preset-typescript": "^7.13.0",
     "@types/jest": "^26.0.23",
     "babel-jest": "^26.6.3",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-ts-paths": "^0.5.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "jest": "^26.6.3",
+    "terser-webpack-plugin": "^5.1.2",
+    "ts-loader": "^9.2.1",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
   },
   "files": [
     "/dist"

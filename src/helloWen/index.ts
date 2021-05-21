@@ -30,6 +30,6 @@ const logoStr = `
 const logoStyle = `
   color: rgb(5, 176, 250);
 `
-export const helloWen = () => {
+export default () => {
   console.log(`%c${logoStr}`, logoStyle)
 }
