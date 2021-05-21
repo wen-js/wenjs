@@ -1,11 +1,11 @@
 {
   "name": "@thewen/wenjs",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
     "login": "npm login --registry https://registry.npmjs.org",
-    "push": "npm publish --registry https://registry.npmjs.org --access=public",
+    "push": "gulp changeVersion && npm publish --registry https://registry.npmjs.org --access=public",
     "test": "jest --config jest.config.ts",
     "build": "webpack && gulp compile"
   },
@@ -28,6 +28,7 @@
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-bump": "^3.2.0",
     "gulp-ts-paths": "^0.5.2",
     "gulp-typescript": "^6.0.0-alpha.1",
     "jest": "^26.6.3",

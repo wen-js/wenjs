@@ -3,6 +3,7 @@ const ts = require('gulp-typescript')
 const tsConfig = ts.createProject('tsconfig.json')
 const paths = require("gulp-ts-paths").default
 const del = require('del')
+var bump = require('gulp-bump');
 
 const cleanLib = () => {
   return del([
@@ -18,8 +19,17 @@ const compileTS = (cb) => {
 }
 
 const compile = gulp.series([cleanLib, compileTS])
+
+
+const changeVersion = () => {
+  return gulp.src('./package.json')
+  .pipe(bump())
+  .pipe(gulp.dest(process.cwd()));
+}
+
 module.exports = {
   cleanLib,
   compileTS,
-  compile
+  compile,
+  changeVersion
 }
