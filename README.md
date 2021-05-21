@@ -13,16 +13,26 @@
 </div>
 
 # 使用 Usage
-1. 直接引用
-    ```html
-    <!-- 直接下载仓库中dist/wenjs.js或者dist/wenjs.min.js-->
-    <script src="dist/wenjs.js"></script>
-    ```
-2. npm
+1. npm
     ```javascript
     import wenjs from '@thewen/wenjs'
     wenjs.helloWen() // open console
     ```
+2. 直接引用
+    ```html
+    <!-- 直接下载仓库中dist/wenjs.js或者dist/wenjs.min.js-->
+    <script src="dist/wenjs.js"></script>
+    <script>
+      wenjs.helloWen()
+    </script>
+    ```
+3. CDN
+
+   [![](https://data.jsdelivr.com/v1/package/npm/@thewen/wenjs/badge)](https://www.jsdelivr.com/package/npm/@thewen/wenjs?path=dist)
+
+    或者
+
+    [UNPKG](https://unpkg.com/browse/@thewen/wenjs/dist/)
 
 # API
 - [helloWen](#helloWen)
