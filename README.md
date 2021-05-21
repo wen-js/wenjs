@@ -5,33 +5,47 @@
 <h1 class="title" align = "center">Wen.JS</h1>
 
 <div class="shields">
-
   <img height="28px" alt="License" src="https://img.shields.io/github/license/wen-js/wenjs?style=for-the-badge" style="max-width:100%;">
-
   <img height="28px" alt="version" src="https://img.shields.io/npm/v/@thewen/wenjs?style=for-the-badge" style="max-width:100%;">
-
   <img height="28px" alt="version" src="https://img.shields.io/npm/dy/@thewen/wenjs?style=for-the-badge" style="max-width:100%;">
-
   <img height="28px" alt="Patreon" src="https://img.shields.io/endpoint?style=for-the-badge&url=https%3A%2F%2Fshields.redsparr0w.com%2F2473%2Fmonday" style="max-width:100%;">
   <img height="28px" alt="Patreon" src="https://img.shields.io/static/v1?label=QQ%E7%BE%A4&message=%E7%9B%B8%E4%BA%B2%E7%9B%B8%E7%88%B1%E4%B8%80%E5%AE%B6%E4%BA%BA&color=ebb92e&style=for-the-badge" style="max-width:100%;">
 </div>
 
+# 使用 Usage
+1. 直接引用
+    ```html
+    <!-- 直接下载仓库中dist/wenjs.js或者dist/wenjs.min.js-->
+    <script src="dist/wenjs.js"></script>
+    ```
+2. npm
+    ```javascript
+    import wenjs from '@thewen/wenjs'
+    wenjs.helloWen() // open console
+    ```
 
-## 贡献
+# API
+- [helloWen](#helloWen)
+## helloWen
+问宗和你打招呼
+```javascript
+// js
+wenjs.helloWen()
+// 打开控制台看输出
+```
 
 
-
-### 赞助者
+# 赞助者
 
 <!-- [上海逆行信息科技](http://www.desmix.com/) -->
 
-### 贡献者
+# 贡献者
 
 <!-- <p>
 <img src="https://opencollective.com/chinese-poetry/contributors.svg?width=890&button=false" alt="Contributors">
 </p> -->
 
-## 案例展示
+# 案例展示
 
 <details>
   <summary>案例展示</summary>
