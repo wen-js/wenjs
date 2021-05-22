@@ -10,7 +10,7 @@ const config: Config.InitialOptions = {
     "^@src/(.*)$": "<rootDir>/src/$1",
   },
   // 忽略
-  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
+  testPathIgnorePatterns: ['/node_modules/', '/dist/', 'lib'],
 }
 export default config;
 

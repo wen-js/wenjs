@@ -7,7 +7,7 @@
     "login": "npm login --registry https://registry.npmjs.org",
     "push": "gulp changeVersion && npm publish --registry https://registry.npmjs.org --access=public",
     "test": "jest --config jest.config.ts",
-    "build": "webpack && gulp compile",
+    "build": "npx webpack && gulp compile",
     "watch": "gulp watchTS"
   },
   "repository": {

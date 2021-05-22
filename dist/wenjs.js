@@ -78,7 +78,7 @@ exports.default = () => {
 /* 2 */
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"name":"@thewen/wenjs","version":"1.0.11","description":"","main":"lib/index.js","scripts":{"login":"npm login --registry https://registry.npmjs.org","push":"gulp changeVersion && npm publish --registry https://registry.npmjs.org --access=public","test":"jest --config jest.config.ts","build":"webpack && gulp compile","watch":"gulp watchTS"},"repository":{"type":"git","url":"git+https://github.com/wen-js/wenjs.git"},"author":"","license":"MIT","bugs":{"url":"https://github.com/wen-js/wenjs/issues"},"homepage":"https://github.com/wen-js/wenjs#readme","devDependencies":{"@babel/core":"^7.14.3","@babel/preset-env":"^7.14.2","@babel/preset-typescript":"^7.13.0","@types/jest":"^26.0.23","babel-jest":"^26.6.3","clean-webpack-plugin":"^4.0.0-alpha.0","del":"^6.0.0","gulp":"^4.0.2","gulp-bump":"^3.2.0","gulp-shell":"^0.8.0","gulp-typescript":"^6.0.0-alpha.1","gulp-watch":"^5.0.1","jest":"^26.6.3","terser-webpack-plugin":"^5.1.2","through2":"^4.0.2","ts-loader":"^9.2.1","ts-node":"^9.1.1","typescript":"^4.2.4","webpack":"^5.37.1","webpack-cli":"^4.7.0"},"files":["dist","lib"]}');
+module.exports = JSON.parse('{"name":"@thewen/wenjs","version":"1.0.11","description":"","main":"lib/index.js","scripts":{"login":"npm login --registry https://registry.npmjs.org","push":"gulp changeVersion && npm publish --registry https://registry.npmjs.org --access=public","test":"jest --config jest.config.ts","build":"npx webpack && gulp compile","watch":"gulp watchTS"},"repository":{"type":"git","url":"git+https://github.com/wen-js/wenjs.git"},"author":"","license":"MIT","bugs":{"url":"https://github.com/wen-js/wenjs/issues"},"homepage":"https://github.com/wen-js/wenjs#readme","devDependencies":{"@babel/core":"^7.14.3","@babel/preset-env":"^7.14.2","@babel/preset-typescript":"^7.13.0","@types/jest":"^26.0.23","babel-jest":"^26.6.3","clean-webpack-plugin":"^4.0.0-alpha.0","del":"^6.0.0","gulp":"^4.0.2","gulp-bump":"^3.2.0","gulp-shell":"^0.8.0","gulp-typescript":"^6.0.0-alpha.1","gulp-watch":"^5.0.1","jest":"^26.6.3","terser-webpack-plugin":"^5.1.2","through2":"^4.0.2","ts-loader":"^9.2.1","ts-node":"^9.1.1","typescript":"^4.2.4","webpack":"^5.37.1","webpack-cli":"^4.7.0"},"files":["dist","lib"]}');
 
 /***/ }),
 /* 3 */
@@ -111,19 +111,91 @@ exports.default = (keyword = '') => {
 
 /***/ }),
 /* 4 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const puma_1 = __importDefault(__webpack_require__(5));
+const _003_1 = __importDefault(__webpack_require__(7));
+const qunYouList = [puma_1.default, _003_1.default];
+exports.default = (who = '') => {
+    const filter = qunYouList.filter(qunyou => qunyou.pattern(who));
+    if (!filter[0]) {
+        return '没有这个人，或者没有简介';
+    }
+    if (filter.length > 1) {
+        const first = filter.pop();
+        const rest = filter.map(i => i.name).join(',');
+        return `${first.dec} → 你想查看的是ta们？${rest}`;
+    }
+    return filter[0].dec || '没有这个人';
+};
+
+
+/***/ }),
+/* 5 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const Who_1 = __importDefault(__webpack_require__(6));
+class Puma extends Who_1.default {
+    constructor() {
+        super(['富婆', '妍妍', '顾研', 'puma'], '富婆(真富婆) 坏吕人');
+    }
+}
+exports.default = new Puma();
+
+
+/***/ }),
+/* 6 */
 /***/ ((__unused_webpack_module, exports) => {
 
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.default = (who = '') => {
-    const whoStr = who.toLowerCase();
-    switch (whoStr) {
-        case ('富婆' || 0 || 0 || 0): {
-            return '富婆(真富婆) 坏吕人';
-        }
-        default: return '没有这个人';
+class Who {
+    constructor(
+    // 群友名称 别名
+    name, 
+    // 群友简介
+    dec) {
+        this.name = name;
+        this.dec = dec;
     }
+    // 名称匹配规则
+    pattern(input) {
+        const inputName = input.trim();
+        if (Array.isArray(this.name)) {
+            return this.name.some(name => name.trim() === inputName);
+        }
+        return inputName === this.name;
+    }
+}
+exports.default = Who;
+
+
+/***/ }),
+/* 7 */
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const Who_1 = __importDefault(__webpack_require__(6));
+class Zzt extends Who_1.default {
+    constructor() {
+        super(['003', '群猫猫', '林可亮'], '性别003 欧皇 自拍狂魔');
+    }
+}
+exports.default = new Zzt();
 
 
 /***/ })

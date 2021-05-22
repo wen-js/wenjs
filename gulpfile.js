@@ -69,7 +69,7 @@ const changeVersion = () => {
 }
 
 const watchTS = () => {
-  return watch('src/**/*', shell.task('yarn build'))
+  return watch('src/**/*', shell.task('npx webpack'))
 }
 
 module.exports = {
