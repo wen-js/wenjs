@@ -1,11 +1,11 @@
 import Puma from './puma'
 import Zzt from './003'
-import Who from './Who'
 
 type QunYouList = [typeof Puma, typeof Zzt]
 const qunYouList:QunYouList = [Puma, Zzt]
 
 export default (who = ''): string => {
+
   const filter = qunYouList.filter(qunyou => qunyou.pattern(who))
   if(!filter[0]) {
     return '没有这个人，或者没有简介'

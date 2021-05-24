@@ -1,4 +1,4 @@
-import Who from "../Who";
+import Who from "../who";
 
 class Puma extends Who {
     constructor() {
