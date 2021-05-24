@@ -1,6 +1,6 @@
 import Who from "../who";
-declare class Puma extends Who {
+declare class Zzt extends Who {
     constructor();
 }
-declare const _default: Puma;
+declare const _default: Zzt;
 export default _default;

@@ -53,8 +53,10 @@ wenjs.baidu(keyword: string)
 
 ## whois
 告诉你ta是谁
+
+使用jsonp查询，词条编辑在[这里](https://github.com/wen-js/wen-data)
 ```typescript
-wenjs.whois(who: string)
+wenjs.whois(who: string): Promise<string>
 // 返回ta的简介
 ```
 # 赞助者
