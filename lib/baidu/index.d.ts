@@ -1,2 +1,2 @@
-declare const _default: (str?: string) => void;
+declare const _default: (keyword?: string) => void;
 export default _default;

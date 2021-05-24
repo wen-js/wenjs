@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "rootDir": "./",
     "outDir": "./lib",
     "target": "es6",
     "lib": [
@@ -21,13 +22,11 @@
     "declaration": true,
     "baseUrl": "./",
     "paths": {
-      "@src/*": ["src/*"]
+      "@/*": ["src/*"],
     }
   },
   "include": [
-    "src/*.ts",
-    "src/*.tsx",
-    "./index.ts",
-    "test/**/*.ts"
+    "src",
+    "test"
   ]
 }
